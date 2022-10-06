@@ -1,4 +1,4 @@
-** Disclaimer: This won't work on a locally hosted website as the session's ip return `::1`.**
+Disclaimer: This won't work on a locally hosted website as the session's ip return `::1`.
 
 Like I said in the [StackOverflow answer](https://stackoverflow.com/a/73935713/3645650), as an alternative to the Geolocation browser API, we should be able to reverse IP geocoding the user location. A free, reliable option seems to be the [geoplugin](https://www.geoplugin.com/) API.
 
