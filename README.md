@@ -63,7 +63,7 @@ add_function( 'wp_login', function ( $user_login, $user ) {
 
 On the front end we can retrieve the user meta through `get_user_meta()`. The last key in the array is the last session.
 
-```
+```php
 <?php
 
 $user_id = get_current_user_id();
