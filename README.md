@@ -1,3 +1,5 @@
+** Disclaimer: This won't work on a locally hosted website as the session's ip return `::1`.**
+
 Like I said in the [StackOverflow answer](https://stackoverflow.com/a/73935713/3645650), as an alternative to the Geolocation browser API, we should be able to reverse IP geocoding the user location. A free, reliable option seems to be the [geoplugin](https://www.geoplugin.com/) API.
 
 We will be retriving all user's currently active sessions and get the user's associated IP. We can then use each ip to retrieve each associated location, and push the whole thing to a custom user meta.
@@ -74,3 +76,5 @@ var_dump( $meta_value );
 
 var_dump( end( $meta_value ) );
 ```
+
+I've not tested it live but it should work.
