@@ -14,7 +14,7 @@ add_function( 'wp_login', function ( $user_login, $user ) {
     /**
      * In our case wp_get_all_sessions() won't work as it rely on get_current_user_id(), and at that point in time get_current_user_id() is not yet "accessible".
      * The alternative is to mirror the wp_get_all_sessions() function and use the second parameter from the wp_login hook which let us retrieve the WP_User object of the logged-in user.
-     * We can then access the user ID through $user-ID.
+     * We can then access the user ID through $user->ID.
      * 
      * @see https://developer.wordpress.org/reference/functions/wp_get_all_sessions/.
      */
