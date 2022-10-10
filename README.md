@@ -51,8 +51,6 @@ add_function( 'wp_login', function ( $user_login, $user ) {
                 array_push( $locations, $location );
     
                 update_user_meta( $user->ID, '_user_sessions_locations', $locations );
-                
-                return $locations;
 
             };
 
