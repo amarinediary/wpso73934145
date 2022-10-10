@@ -50,9 +50,9 @@ add_function( 'wp_login', function ( $user_login, $user ) {
                 //Push each ip's location to a new array.
                 array_push( $locations, $location );
     
-                return $locations;
-
                 update_user_meta( $user->ID, '_user_sessions_locations', $locations );
+                
+                return $locations;
 
             };
 
